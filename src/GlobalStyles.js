@@ -6,6 +6,12 @@ export default createGlobalStyle`
     font-family: sans-serif;
   }
 
+  #root {
+    /* ensures that portals will get to get up to the top level */
+    /* makes the react app a stacking context */
+    isolation: isolate;
+  }
+
   /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
