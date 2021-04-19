@@ -20,6 +20,7 @@ const Wrapper = styled.button`
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  /* put it on same level as wrapper, and wrapper has it's own stacking context isolation: isolate */
   /* z-index: 2; */
 `;
 

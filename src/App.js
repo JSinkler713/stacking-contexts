@@ -9,24 +9,30 @@ import HelpButton from "./HelpButton";
 
 export default function App() {
   return (
-    <Wrapper>
-      <HeaderWrapper>
-        <Header />
-      </HeaderWrapper>
-      <PageContent />
-      <GlobalStyles />
+    <>
+      <Wrapper>
+        <HeaderWrapper>
+          <Header />
+        </HeaderWrapper>
+        <PageContent />
+        <GlobalStyles />
+      </Wrapper>
       <HelpButton />
-    </Wrapper>
+    </>
   );
 }
 
 const Wrapper = styled.div`
   min-height: 150vh;
+  /* Now Wrapper and HelpButton are on the same level */
+  /* We won't have to fight z-index */
   isolation: isolate;
 `;
 
 const HeaderWrapper = styled.div`
   position: sticky;
   top: 0;
+  z-index: 1;
+  /* good to not go crazy with z's */
   /* z-index:3; */
 `;
