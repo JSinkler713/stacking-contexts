@@ -20,7 +20,7 @@ const Wrapper = styled.button`
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  z-index: 2;
+  /* z-index: 2; */
 `;
 
 export default HelpButton;
