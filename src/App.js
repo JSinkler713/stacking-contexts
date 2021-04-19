@@ -22,9 +22,11 @@ export default function App() {
 
 const Wrapper = styled.div`
   min-height: 150vh;
+  isolation: isolate;
 `;
 
 const HeaderWrapper = styled.div`
   position: sticky;
   top: 0;
+  z-index:3;
 `;
